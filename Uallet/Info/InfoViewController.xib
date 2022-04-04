@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="InfoViewController" customModule="Uallet" customModuleProvider="target">
+            <connections>
+                <outlet property="activityLoading" destination="qnq-Tv-cSR" id="0bQ-PC-YhE"/>
+                <outlet property="buttonRefrescarInfo" destination="quZ-cH-jva" id="hqb-OG-2Yo"/>
+                <outlet property="titleBitcoin" destination="CWd-Ya-tSN" id="AOg-Su-aqc"/>
+                <outlet property="titleDolarOficial" destination="VkS-jm-7M1" id="jIe-Al-uw4"/>
+                <outlet property="valorBitcoinPesos" destination="NEf-IN-pp9" id="mRB-Ji-Twd"/>
+                <outlet property="valorCompraDolarOficial" destination="PDV-g2-8Wh" id="ZQa-aj-LKW"/>
+                <outlet property="valorVentaDolarOficial" destination="kZZ-6U-j0d" id="h7s-nM-XvI"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="viewBitcoin" destination="KNv-ty-Pbi" id="XPc-xN-12k"/>
+                <outlet property="viewDolarOficial" destination="A19-T5-OaN" id="uu6-km-wXo"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="A19-T5-OaN">
+                    <rect key="frame" x="40" y="64" width="334" height="100"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dolar " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VkS-jm-7M1">
+                            <rect key="frame" x="138.5" y="8" width="57.5" height="25.5"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
+                            <color key="textColor" name="Violeta"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Compra" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BDd-Ll-5DU">
+                            <rect key="frame" x="50" y="35" width="61" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" name="Violeta"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Venta" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="93k-YX-yyI">
+                            <rect key="frame" x="240" y="35" width="44" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" name="Violeta"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Valor" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PDV-g2-8Wh">
+                            <rect key="frame" x="61" y="66" width="39" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Valor" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kZZ-6U-j0d">
+                            <rect key="frame" x="242.5" y="66" width="39" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" name="pastel"/>
+                    <constraints>
+                        <constraint firstItem="BDd-Ll-5DU" firstAttribute="leading" secondItem="A19-T5-OaN" secondAttribute="leading" constant="50" id="7j3-I6-xFP"/>
+                        <constraint firstItem="kZZ-6U-j0d" firstAttribute="centerX" secondItem="93k-YX-yyI" secondAttribute="centerX" id="Ej2-Sk-wOM"/>
+                        <constraint firstItem="BDd-Ll-5DU" firstAttribute="top" secondItem="A19-T5-OaN" secondAttribute="top" constant="35" id="J5W-Tu-Mbp"/>
+                        <constraint firstItem="VkS-jm-7M1" firstAttribute="centerX" secondItem="A19-T5-OaN" secondAttribute="centerX" id="KlL-I7-AZG"/>
+                        <constraint firstItem="PDV-g2-8Wh" firstAttribute="centerX" secondItem="BDd-Ll-5DU" secondAttribute="centerX" id="Lhx-TY-WGS"/>
+                        <constraint firstAttribute="trailing" secondItem="93k-YX-yyI" secondAttribute="trailing" constant="50" id="Qhf-Rl-2hm"/>
+                        <constraint firstItem="VkS-jm-7M1" firstAttribute="top" secondItem="A19-T5-OaN" secondAttribute="top" constant="8" id="Qvx-nK-sGN"/>
+                        <constraint firstItem="kZZ-6U-j0d" firstAttribute="top" secondItem="93k-YX-yyI" secondAttribute="bottom" constant="10" id="h56-1y-eQz"/>
+                        <constraint firstItem="93k-YX-yyI" firstAttribute="top" secondItem="A19-T5-OaN" secondAttribute="top" constant="35" id="mqQ-6g-8Rd"/>
+                        <constraint firstAttribute="height" constant="100" id="vcJ-Od-dk2"/>
+                        <constraint firstItem="PDV-g2-8Wh" firstAttribute="top" secondItem="BDd-Ll-5DU" secondAttribute="bottom" constant="10" id="yjf-eC-LIy"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KNv-ty-Pbi">
+                    <rect key="frame" x="40" y="179" width="334" height="100"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bitcoin" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CWd-Ya-tSN">
+                            <rect key="frame" x="133" y="8" width="68.5" height="25.5"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
+                            <color key="textColor" name="Violeta"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Valor" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NEf-IN-pp9">
+                            <rect key="frame" x="147.5" y="41" width="39" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" name="pastel"/>
+                    <constraints>
+                        <constraint firstItem="NEf-IN-pp9" firstAttribute="top" secondItem="CWd-Ya-tSN" secondAttribute="bottom" constant="7.5" id="Chf-76-OOd"/>
+                        <constraint firstItem="CWd-Ya-tSN" firstAttribute="top" secondItem="KNv-ty-Pbi" secondAttribute="top" constant="8" id="S5G-ZE-16H"/>
+                        <constraint firstAttribute="height" constant="100" id="cWi-oX-DLh"/>
+                        <constraint firstItem="CWd-Ya-tSN" firstAttribute="centerX" secondItem="KNv-ty-Pbi" secondAttribute="centerX" id="vOc-O1-BFE"/>
+                        <constraint firstItem="NEf-IN-pp9" firstAttribute="centerX" secondItem="CWd-Ya-tSN" secondAttribute="centerX" id="zgm-Vf-NoE"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="quZ-cH-jva">
+                    <rect key="frame" x="40" y="781" width="334" height="31"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="filled" title="Refrescar Información">
+                        <color key="baseBackgroundColor" name="Violeta"/>
+                    </buttonConfiguration>
+                    <connections>
+                        <action selector="buttonRefrescarInfo:" destination="-1" eventType="touchUpInside" id="TPD-KV-Hrv"/>
+                    </connections>
+                </button>
+                <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="qnq-Tv-cSR">
+                    <rect key="frame" x="197" y="438" width="20" height="20"/>
+                </activityIndicatorView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" name="pastel"/>
+            <constraints>
+                <constraint firstItem="qnq-Tv-cSR" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="C0j-eR-HP3"/>
+                <constraint firstItem="KNv-ty-Pbi" firstAttribute="leading" secondItem="A19-T5-OaN" secondAttribute="leading" id="EcX-c3-OvM"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="A19-T5-OaN" secondAttribute="trailing" constant="40" id="J4G-AI-BPa"/>
+                <constraint firstItem="quZ-cH-jva" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="40" id="JTO-Co-w4g"/>
+                <constraint firstItem="KNv-ty-Pbi" firstAttribute="centerX" secondItem="A19-T5-OaN" secondAttribute="centerX" id="Nzi-mo-jWm"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="quZ-cH-jva" secondAttribute="bottom" constant="50" id="a2h-yI-A5B"/>
+                <constraint firstItem="A19-T5-OaN" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="40" id="kJD-0t-ucu"/>
+                <constraint firstItem="A19-T5-OaN" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="20" id="nhn-nK-uQO"/>
+                <constraint firstItem="KNv-ty-Pbi" firstAttribute="top" secondItem="A19-T5-OaN" secondAttribute="bottom" constant="15" id="pHN-3s-zAR"/>
+                <constraint firstItem="KNv-ty-Pbi" firstAttribute="trailing" secondItem="A19-T5-OaN" secondAttribute="trailing" id="uZa-zw-Id6"/>
+                <constraint firstItem="qnq-Tv-cSR" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="whU-K4-9yp"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="quZ-cH-jva" secondAttribute="trailing" constant="40" id="zdw-Dh-Ig1"/>
+            </constraints>
+            <point key="canvasLocation" x="131.8840579710145" y="81.696428571428569"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="Violeta">
+            <color red="0.36862745098039218" green="0.086274509803921567" blue="0.92156862745098034" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="pastel">
+            <color red="0.98431372549019602" green="0.90980392156862744" blue="0.82352941176470584" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
