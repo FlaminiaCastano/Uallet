@@ -14,6 +14,7 @@
                 <outlet property="buttonRefrescarInfo" destination="quZ-cH-jva" id="hqb-OG-2Yo"/>
                 <outlet property="titleBitcoin" destination="CWd-Ya-tSN" id="AOg-Su-aqc"/>
                 <outlet property="titleDolarOficial" destination="VkS-jm-7M1" id="jIe-Al-uw4"/>
+                <outlet property="titleLabel" destination="cFn-kp-cDx" id="Trd-zW-J4L"/>
                 <outlet property="valorBitcoinPesos" destination="NEf-IN-pp9" id="mRB-Ji-Twd"/>
                 <outlet property="valorCompraDolarOficial" destination="PDV-g2-8Wh" id="ZQa-aj-LKW"/>
                 <outlet property="valorVentaDolarOficial" destination="kZZ-6U-j0d" id="h7s-nM-XvI"/>
@@ -28,7 +29,7 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="A19-T5-OaN">
-                    <rect key="frame" x="40" y="64" width="334" height="100"/>
+                    <rect key="frame" x="40" y="165" width="334" height="100"/>
                     <subviews>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dolar Blue" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VkS-jm-7M1">
                             <rect key="frame" x="116.5" y="8" width="101" height="25.5"/>
@@ -77,7 +78,7 @@
                     </constraints>
                 </view>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KNv-ty-Pbi">
-                    <rect key="frame" x="40" y="179" width="334" height="100"/>
+                    <rect key="frame" x="40" y="280" width="334" height="100"/>
                     <subviews>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bitcoin" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CWd-Ya-tSN">
                             <rect key="frame" x="133" y="8" width="68.5" height="25.5"/>
@@ -114,10 +115,18 @@
                 <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="qnq-Tv-cSR">
                     <rect key="frame" x="197" y="438" width="20" height="20"/>
                 </activityIndicatorView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Valor al día de la fecha" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cFn-kp-cDx">
+                    <rect key="frame" x="116.5" y="94" width="181" height="21"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" name="pastel"/>
             <constraints>
+                <constraint firstItem="A19-T5-OaN" firstAttribute="top" secondItem="cFn-kp-cDx" secondAttribute="bottom" constant="50" id="2Aj-tK-vBF"/>
+                <constraint firstItem="cFn-kp-cDx" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="50" id="563-a8-wgz"/>
                 <constraint firstItem="qnq-Tv-cSR" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="C0j-eR-HP3"/>
                 <constraint firstItem="KNv-ty-Pbi" firstAttribute="leading" secondItem="A19-T5-OaN" secondAttribute="leading" id="EcX-c3-OvM"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="A19-T5-OaN" secondAttribute="trailing" constant="40" id="J4G-AI-BPa"/>
@@ -125,11 +134,11 @@
                 <constraint firstItem="KNv-ty-Pbi" firstAttribute="centerX" secondItem="A19-T5-OaN" secondAttribute="centerX" id="Nzi-mo-jWm"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="quZ-cH-jva" secondAttribute="bottom" constant="50" id="a2h-yI-A5B"/>
                 <constraint firstItem="A19-T5-OaN" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="40" id="kJD-0t-ucu"/>
-                <constraint firstItem="A19-T5-OaN" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="20" id="nhn-nK-uQO"/>
                 <constraint firstItem="KNv-ty-Pbi" firstAttribute="top" secondItem="A19-T5-OaN" secondAttribute="bottom" constant="15" id="pHN-3s-zAR"/>
                 <constraint firstItem="KNv-ty-Pbi" firstAttribute="trailing" secondItem="A19-T5-OaN" secondAttribute="trailing" id="uZa-zw-Id6"/>
                 <constraint firstItem="qnq-Tv-cSR" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="whU-K4-9yp"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="quZ-cH-jva" secondAttribute="trailing" constant="40" id="zdw-Dh-Ig1"/>
+                <constraint firstItem="cFn-kp-cDx" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="zeJ-cQ-IV9"/>
             </constraints>
             <point key="canvasLocation" x="131.8840579710145" y="81.696428571428569"/>
         </view>

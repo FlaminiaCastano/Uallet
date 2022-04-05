@@ -12,8 +12,6 @@
 		A03E776A27F3724E0095D02F /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A03E776827F3724E0095D02F /* HomeViewController.xib */; };
 		A03E776D27F372650095D02F /* DashboardsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A03E776B27F372650095D02F /* DashboardsViewController.swift */; };
 		A03E776E27F372650095D02F /* DashboardsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A03E776C27F372650095D02F /* DashboardsViewController.xib */; };
-		A03E777127F372770095D02F /* WalletsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A03E776F27F372770095D02F /* WalletsViewController.swift */; };
-		A03E777227F372770095D02F /* WalletsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A03E777027F372770095D02F /* WalletsViewController.xib */; };
 		A03E777527F372880095D02F /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A03E777327F372880095D02F /* InfoViewController.swift */; };
 		A03E777627F372880095D02F /* InfoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A03E777427F372880095D02F /* InfoViewController.xib */; };
 		A0A3BF3027FB71970068E884 /* APIBitcoinStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0A3BF2F27FB71970068E884 /* APIBitcoinStruct.swift */; };
@@ -28,6 +26,15 @@
 		A0BD8E1027EE4CB100DEEDFE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0BD8E0E27EE4CB100DEEDFE /* LaunchScreen.storyboard */; };
 		A0CDF83227F3B45500FC3858 /* UserAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0CDF83127F3B45500FC3858 /* UserAPI.swift */; };
 		A0CDF83427F3BC7400FC3858 /* Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0CDF83327F3BC7400FC3858 /* Storage.swift */; };
+		A0D3BFF827FCB1EC005A0F92 /* DolarRate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0D3BFF727FCB1EC005A0F92 /* DolarRate.swift */; };
+		A0D3BFFA27FCB1FD005A0F92 /* Wallet.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0D3BFF927FCB1FD005A0F92 /* Wallet.swift */; };
+		A0D3BFFC27FCB206005A0F92 /* Currency.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0D3BFFB27FCB206005A0F92 /* Currency.swift */; };
+		A0D3BFFE27FCB218005A0F92 /* WalletsStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0D3BFFD27FCB218005A0F92 /* WalletsStorage.swift */; };
+		A0D3C00127FCB2B9005A0F92 /* WalletsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0D3BFFF27FCB2B9005A0F92 /* WalletsTableViewController.swift */; };
+		A0D3C00227FCB2B9005A0F92 /* WalletsTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A0D3C00027FCB2B9005A0F92 /* WalletsTableViewController.xib */; };
+		A0D3C00527FCB3A8005A0F92 /* WalletCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0D3C00327FCB3A8005A0F92 /* WalletCell.swift */; };
+		A0D3C00627FCB3A8005A0F92 /* WalletCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A0D3C00427FCB3A8005A0F92 /* WalletCell.xib */; };
+		A0D3C00827FCC1AD005A0F92 /* FormatoDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0D3C00727FCC1AD005A0F92 /* FormatoDate.swift */; };
 		A0DDE0F327F4A53F00DBD82A /* MainTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0DDE0F227F4A53F00DBD82A /* MainTabBarViewController.swift */; };
 		A0DDE0F627F4B95100DBD82A /* WalletAddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0DDE0F427F4B95100DBD82A /* WalletAddViewController.swift */; };
 		A0DDE0F727F4B95100DBD82A /* WalletAddViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A0DDE0F527F4B95100DBD82A /* WalletAddViewController.xib */; };
@@ -41,8 +48,6 @@
 		A03E776827F3724E0095D02F /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
 		A03E776B27F372650095D02F /* DashboardsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardsViewController.swift; sourceTree = "<group>"; };
 		A03E776C27F372650095D02F /* DashboardsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DashboardsViewController.xib; sourceTree = "<group>"; };
-		A03E776F27F372770095D02F /* WalletsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletsViewController.swift; sourceTree = "<group>"; };
-		A03E777027F372770095D02F /* WalletsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WalletsViewController.xib; sourceTree = "<group>"; };
 		A03E777327F372880095D02F /* InfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
 		A03E777427F372880095D02F /* InfoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InfoViewController.xib; sourceTree = "<group>"; };
 		A0A3BF2F27FB71970068E884 /* APIBitcoinStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIBitcoinStruct.swift; sourceTree = "<group>"; };
@@ -59,6 +64,15 @@
 		A0BD8E1127EE4CB100DEEDFE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A0CDF83127F3B45500FC3858 /* UserAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAPI.swift; sourceTree = "<group>"; };
 		A0CDF83327F3BC7400FC3858 /* Storage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storage.swift; sourceTree = "<group>"; };
+		A0D3BFF727FCB1EC005A0F92 /* DolarRate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DolarRate.swift; sourceTree = "<group>"; };
+		A0D3BFF927FCB1FD005A0F92 /* Wallet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wallet.swift; sourceTree = "<group>"; };
+		A0D3BFFB27FCB206005A0F92 /* Currency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Currency.swift; sourceTree = "<group>"; };
+		A0D3BFFD27FCB218005A0F92 /* WalletsStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletsStorage.swift; sourceTree = "<group>"; };
+		A0D3BFFF27FCB2B9005A0F92 /* WalletsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletsTableViewController.swift; sourceTree = "<group>"; };
+		A0D3C00027FCB2B9005A0F92 /* WalletsTableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WalletsTableViewController.xib; sourceTree = "<group>"; };
+		A0D3C00327FCB3A8005A0F92 /* WalletCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletCell.swift; sourceTree = "<group>"; };
+		A0D3C00427FCB3A8005A0F92 /* WalletCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WalletCell.xib; sourceTree = "<group>"; };
+		A0D3C00727FCC1AD005A0F92 /* FormatoDate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormatoDate.swift; sourceTree = "<group>"; };
 		A0DDE0F227F4A53F00DBD82A /* MainTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarViewController.swift; sourceTree = "<group>"; };
 		A0DDE0F427F4B95100DBD82A /* WalletAddViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletAddViewController.swift; sourceTree = "<group>"; };
 		A0DDE0F527F4B95100DBD82A /* WalletAddViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WalletAddViewController.xib; sourceTree = "<group>"; };
@@ -115,10 +129,12 @@
 		A03E777A27F372E80095D02F /* Wallets */ = {
 			isa = PBXGroup;
 			children = (
-				A03E776F27F372770095D02F /* WalletsViewController.swift */,
-				A03E777027F372770095D02F /* WalletsViewController.xib */,
 				A0DDE0F427F4B95100DBD82A /* WalletAddViewController.swift */,
 				A0DDE0F527F4B95100DBD82A /* WalletAddViewController.xib */,
+				A0D3BFFF27FCB2B9005A0F92 /* WalletsTableViewController.swift */,
+				A0D3C00027FCB2B9005A0F92 /* WalletsTableViewController.xib */,
+				A0D3C00327FCB3A8005A0F92 /* WalletCell.swift */,
+				A0D3C00427FCB3A8005A0F92 /* WalletCell.xib */,
 			);
 			path = Wallets;
 			sourceTree = "<group>";
@@ -153,7 +169,7 @@
 		A0BD8E0227EE4CAE00DEEDFE /* Uallet */ = {
 			isa = PBXGroup;
 			children = (
-				A0CE5EF327F7786900CA64AD /* DataManager */,
+				A0D3BFF627FCB1B8005A0F92 /* Models */,
 				A0CE5EF227F7785800CA64AD /* API */,
 				A0BD8E0327EE4CAE00DEEDFE /* AppDelegate.swift */,
 				A0BD8E0527EE4CAE00DEEDFE /* SceneDelegate.swift */,
@@ -182,12 +198,17 @@
 			path = API;
 			sourceTree = "<group>";
 		};
-		A0CE5EF327F7786900CA64AD /* DataManager */ = {
+		A0D3BFF627FCB1B8005A0F92 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				A0D3BFF727FCB1EC005A0F92 /* DolarRate.swift */,
+				A0D3BFF927FCB1FD005A0F92 /* Wallet.swift */,
+				A0D3BFFB27FCB206005A0F92 /* Currency.swift */,
+				A0D3BFFD27FCB218005A0F92 /* WalletsStorage.swift */,
 				A0CDF83327F3BC7400FC3858 /* Storage.swift */,
+				A0D3C00727FCC1AD005A0F92 /* FormatoDate.swift */,
 			);
-			path = DataManager;
+			path = Models;
 			sourceTree = "<group>";
 		};
 		A3A320A7B6E4152E908C2B67 /* Frameworks */ = {
@@ -262,10 +283,11 @@
 				A03E776E27F372650095D02F /* DashboardsViewController.xib in Resources */,
 				A0BD8E0D27EE4CB100DEEDFE /* Assets.xcassets in Resources */,
 				A0BD8E0B27EE4CAE00DEEDFE /* LoginViewController.storyboard in Resources */,
+				A0D3C00627FCB3A8005A0F92 /* WalletCell.xib in Resources */,
 				A03E776A27F3724E0095D02F /* HomeViewController.xib in Resources */,
 				A0DDE0F727F4B95100DBD82A /* WalletAddViewController.xib in Resources */,
 				A03E777627F372880095D02F /* InfoViewController.xib in Resources */,
-				A03E777227F372770095D02F /* WalletsViewController.xib in Resources */,
+				A0D3C00227FCB2B9005A0F92 /* WalletsTableViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -318,20 +340,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A0D3C00127FCB2B9005A0F92 /* WalletsTableViewController.swift in Sources */,
+				A0D3BFFC27FCB206005A0F92 /* Currency.swift in Sources */,
 				A0BD8E0827EE4CAE00DEEDFE /* LoginViewController.swift in Sources */,
 				A0BD8E0427EE4CAE00DEEDFE /* AppDelegate.swift in Sources */,
 				A03E776D27F372650095D02F /* DashboardsViewController.swift in Sources */,
+				A0D3BFFE27FCB218005A0F92 /* WalletsStorage.swift in Sources */,
 				A03E777527F372880095D02F /* InfoViewController.swift in Sources */,
-				A03E777127F372770095D02F /* WalletsViewController.swift in Sources */,
+				A0D3C00827FCC1AD005A0F92 /* FormatoDate.swift in Sources */,
 				A0DDE0F327F4A53F00DBD82A /* MainTabBarViewController.swift in Sources */,
 				A0DDE0F627F4B95100DBD82A /* WalletAddViewController.swift in Sources */,
 				A0A3BF3027FB71970068E884 /* APIBitcoinStruct.swift in Sources */,
+				A0D3BFF827FCB1EC005A0F92 /* DolarRate.swift in Sources */,
 				A0CDF83427F3BC7400FC3858 /* Storage.swift in Sources */,
+				A0D3C00527FCB3A8005A0F92 /* WalletCell.swift in Sources */,
 				A0BD8E0627EE4CAE00DEEDFE /* SceneDelegate.swift in Sources */,
 				A03E776927F3724E0095D02F /* HomeViewController.swift in Sources */,
 				A0A3BF3627FB754A0068E884 /* APICotizacionesPromises.swift in Sources */,
 				A0CDF83227F3B45500FC3858 /* UserAPI.swift in Sources */,
 				A0A3BF3227FB71C60068E884 /* APIDolarStruct.swift in Sources */,
+				A0D3BFFA27FCB1FD005A0F92 /* Wallet.swift in Sources */,
 				A0A3BF3427FB71D20068E884 /* APICotizaciones.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -24,9 +24,11 @@ class InfoViewController: UIViewController {
     @IBOutlet weak var activityLoading: UIActivityIndicatorView!
     
     
+    @IBOutlet weak var titleLabel: UILabel!
     
     @IBOutlet weak var buttonRefrescarInfo: UIButton!
     
+    var date = Date()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -50,7 +52,10 @@ class InfoViewController: UIViewController {
         
         buttonRefrescarInfo.layer.cornerRadius = 15
         
+        date = Date.now
         activityLoading.isHidden = true
+        titleLabel.text = "Valor al \(date.fechaCompleta(date: date))"
+        titleLabel.textColor = UIColor(named: "Violeta")
         
     }
 

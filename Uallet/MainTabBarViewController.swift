@@ -26,7 +26,7 @@ class MainTabBarViewController: UITabBarController {
         let dashNavigationVC = UINavigationController(rootViewController: dashboardsVC)
         dashNavigationVC.tabBarItem = UITabBarItem(title: "Dashboards", image: dashIcono, selectedImage: nil)
         
-        let walletsVC = WalletsViewController()
+        let walletsVC = WalletsTableViewController()
         let walletIcono = UIImage(systemName: "wallet.pass.fill")
         let walletsNavigationVC = UINavigationController(rootViewController: walletsVC)
         walletsNavigationVC.tabBarItem = UITabBarItem(title: "Wallets", image: walletIcono, selectedImage: nil)
