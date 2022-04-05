@@ -14,6 +14,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        let timestampViejo = UserDefaults.standard.double(forKey: "timestamp_bg")
+        if timestampViejo > 0 {
+            let timestampNuevo = NSDate().timeIntervalSince1970
+            let tiempoPaso = timestampNuevo - timestampViejo
+            print("Abriste la app \(tiempoPaso) segundos después")
+        } else {
+            print("Primera ejecución")
+        }
+        
         return true
     }
 
