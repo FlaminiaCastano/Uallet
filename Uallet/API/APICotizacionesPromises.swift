@@ -28,37 +28,21 @@ extension APICotizaciones {
         }
     }
     
-    
-    static func dolarBlueRatePromises() -> Promise<Double> {
-        return Promise { resolver in
-            AF.request("http://api-dolar-argentina.herokuapp.com/api/dolarblue")
-                .responseDecodable(of: APIDolarArgentinaResponse.self) {
-                response in
-                
-                    if let value = response.value {
-                        if let rate = Double(value.compra) {
-                                resolver.fulfill(rate)
-                        } else {
-                            resolver.reject(APIError.ServerError)
-                        }
-                    } else {
-                        resolver.reject(APIError.ServerError)
-                    }
-                    
-            }
-        }
-        
+    struct DolarBlue {
+        let compra: Double
+        let venta: Double
     }
     
-    static func dolarBlueRatePromisesVENTA() -> Promise<Double> {
+    static func dolarBlueRatePromises()-> Promise<DolarBlue> {
         return Promise { resolver in
             AF.request("http://api-dolar-argentina.herokuapp.com/api/dolarblue")
                 .responseDecodable(of: APIDolarArgentinaResponse.self) {
                 response in
                 
                     if let value = response.value {
-                        if let rate = Double(value.venta) {
-                                resolver.fulfill(rate)
+                        if let rateVenta = Double(value.venta), let rateCompra = Double(value.compra) {
+                            let rateValor = DolarBlue(compra: rateCompra, venta: rateVenta)
+                                resolver.fulfill(rateValor)
                         } else {
                             resolver.reject(APIError.ServerError)
                         }

@@ -28,7 +28,7 @@ class APICotizaciones {
     }
     
     static func dolarBlueRate(callback: @escaping (Bool, Double?, Double?)->Void ) {
-        AF.request("https://api-dolar-argentina.herokuapp.com/api/dolarblue")
+        AF.request("http://api-dolar-argentina.herokuapp.com/api/dolarblue")
             .responseDecodable(of: APIDolarArgentinaResponse.self) {
             response in
             

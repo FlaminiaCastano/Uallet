@@ -65,15 +65,14 @@ class InfoViewController: UIViewController {
         firstly {
             when (fulfilled:
                     APICotizaciones.bitcoinRatePromises(),
-                  APICotizaciones.dolarBlueRatePromises(),
-                  APICotizaciones.dolarBlueRatePromisesVENTA()
+                  APICotizaciones.dolarBlueRatePromises()
             )
         }
         .done { rates in
             //Se cumplen las tres promesas
             self.valorBitcoinPesos.text = " 1 BTC = \(rates.0) USD"
-            self.valorCompraDolarOficial.text = String(rates.1)
-            self.valorVentaDolarOficial.text = String(rates.2)
+            self.valorCompraDolarOficial.text = String(rates.1.compra)
+            self.valorVentaDolarOficial.text = String(rates.1.venta)
         }
         .catch { error in
             self.valorBitcoinPesos.text = "Error"
