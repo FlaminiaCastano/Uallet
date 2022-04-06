@@ -35,6 +35,8 @@
 		A0D3C00527FCB3A8005A0F92 /* WalletCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0D3C00327FCB3A8005A0F92 /* WalletCell.swift */; };
 		A0D3C00627FCB3A8005A0F92 /* WalletCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A0D3C00427FCB3A8005A0F92 /* WalletCell.xib */; };
 		A0D3C00827FCC1AD005A0F92 /* FormatoDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0D3C00727FCC1AD005A0F92 /* FormatoDate.swift */; };
+		A0D78FEF27FE337E0068F6D6 /* WalletDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0D78FED27FE337E0068F6D6 /* WalletDetailViewController.swift */; };
+		A0D78FF027FE337E0068F6D6 /* WalletDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A0D78FEE27FE337E0068F6D6 /* WalletDetailViewController.xib */; };
 		A0DDE0F327F4A53F00DBD82A /* MainTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0DDE0F227F4A53F00DBD82A /* MainTabBarViewController.swift */; };
 		A0DDE0F627F4B95100DBD82A /* WalletAddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0DDE0F427F4B95100DBD82A /* WalletAddViewController.swift */; };
 		A0DDE0F727F4B95100DBD82A /* WalletAddViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A0DDE0F527F4B95100DBD82A /* WalletAddViewController.xib */; };
@@ -73,6 +75,8 @@
 		A0D3C00327FCB3A8005A0F92 /* WalletCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletCell.swift; sourceTree = "<group>"; };
 		A0D3C00427FCB3A8005A0F92 /* WalletCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WalletCell.xib; sourceTree = "<group>"; };
 		A0D3C00727FCC1AD005A0F92 /* FormatoDate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormatoDate.swift; sourceTree = "<group>"; };
+		A0D78FED27FE337E0068F6D6 /* WalletDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletDetailViewController.swift; sourceTree = "<group>"; };
+		A0D78FEE27FE337E0068F6D6 /* WalletDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WalletDetailViewController.xib; sourceTree = "<group>"; };
 		A0DDE0F227F4A53F00DBD82A /* MainTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarViewController.swift; sourceTree = "<group>"; };
 		A0DDE0F427F4B95100DBD82A /* WalletAddViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletAddViewController.swift; sourceTree = "<group>"; };
 		A0DDE0F527F4B95100DBD82A /* WalletAddViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WalletAddViewController.xib; sourceTree = "<group>"; };
@@ -133,8 +137,8 @@
 				A0DDE0F527F4B95100DBD82A /* WalletAddViewController.xib */,
 				A0D3BFFF27FCB2B9005A0F92 /* WalletsTableViewController.swift */,
 				A0D3C00027FCB2B9005A0F92 /* WalletsTableViewController.xib */,
-				A0D3C00327FCB3A8005A0F92 /* WalletCell.swift */,
-				A0D3C00427FCB3A8005A0F92 /* WalletCell.xib */,
+				A0D78FED27FE337E0068F6D6 /* WalletDetailViewController.swift */,
+				A0D78FEE27FE337E0068F6D6 /* WalletDetailViewController.xib */,
 			);
 			path = Wallets;
 			sourceTree = "<group>";
@@ -169,6 +173,7 @@
 		A0BD8E0227EE4CAE00DEEDFE /* Uallet */ = {
 			isa = PBXGroup;
 			children = (
+				A0D78FEC27FE28F20068F6D6 /* Cell */,
 				A0D3BFF627FCB1B8005A0F92 /* Models */,
 				A0CE5EF227F7785800CA64AD /* API */,
 				A0BD8E0327EE4CAE00DEEDFE /* AppDelegate.swift */,
@@ -209,6 +214,15 @@
 				A0D3C00727FCC1AD005A0F92 /* FormatoDate.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		A0D78FEC27FE28F20068F6D6 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				A0D3C00427FCB3A8005A0F92 /* WalletCell.xib */,
+				A0D3C00327FCB3A8005A0F92 /* WalletCell.swift */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 		A3A320A7B6E4152E908C2B67 /* Frameworks */ = {
@@ -285,6 +299,7 @@
 				A0BD8E0B27EE4CAE00DEEDFE /* LoginViewController.storyboard in Resources */,
 				A0D3C00627FCB3A8005A0F92 /* WalletCell.xib in Resources */,
 				A03E776A27F3724E0095D02F /* HomeViewController.xib in Resources */,
+				A0D78FF027FE337E0068F6D6 /* WalletDetailViewController.xib in Resources */,
 				A0DDE0F727F4B95100DBD82A /* WalletAddViewController.xib in Resources */,
 				A03E777627F372880095D02F /* InfoViewController.xib in Resources */,
 				A0D3C00227FCB2B9005A0F92 /* WalletsTableViewController.xib in Resources */,
@@ -348,6 +363,7 @@
 				A0D3BFFE27FCB218005A0F92 /* WalletsStorage.swift in Sources */,
 				A03E777527F372880095D02F /* InfoViewController.swift in Sources */,
 				A0D3C00827FCC1AD005A0F92 /* FormatoDate.swift in Sources */,
+				A0D78FEF27FE337E0068F6D6 /* WalletDetailViewController.swift in Sources */,
 				A0DDE0F327F4A53F00DBD82A /* MainTabBarViewController.swift in Sources */,
 				A0DDE0F627F4B95100DBD82A /* WalletAddViewController.swift in Sources */,
 				A0A3BF3027FB71970068E884 /* APIBitcoinStruct.swift in Sources */,

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="WalletCell" customModule="Uallet" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aJ1-5p-F1e">
+                        <rect key="frame" x="5" y="5" width="310" height="34"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NombreWallet" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AaN-PB-Q8i">
+                                <rect key="frame" x="5" y="0.0" width="130" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="130" id="qYM-yw-UB2"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Moneda" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D1l-TA-MiN">
+                                <rect key="frame" x="150" y="0.0" width="50" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="u5A-ql-bim"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Monto" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sfK-Fy-Hfw">
+                                <rect key="frame" x="210" y="0.0" width="100" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="EyM-54-rxl"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBrownColor"/>
+                        <constraints>
+                            <constraint firstItem="AaN-PB-Q8i" firstAttribute="top" secondItem="aJ1-5p-F1e" secondAttribute="top" id="3RZ-g5-ijz"/>
+                            <constraint firstItem="sfK-Fy-Hfw" firstAttribute="leading" secondItem="D1l-TA-MiN" secondAttribute="trailing" constant="10" id="597-o2-mmY"/>
+                            <constraint firstAttribute="bottom" secondItem="AaN-PB-Q8i" secondAttribute="bottom" id="7sI-DB-R0r"/>
+                            <constraint firstItem="D1l-TA-MiN" firstAttribute="top" secondItem="aJ1-5p-F1e" secondAttribute="top" id="O5e-3i-Eou"/>
+                            <constraint firstAttribute="bottom" secondItem="sfK-Fy-Hfw" secondAttribute="bottom" id="OPS-7s-cOp"/>
+                            <constraint firstItem="AaN-PB-Q8i" firstAttribute="leading" secondItem="aJ1-5p-F1e" secondAttribute="leading" constant="5" id="b4k-a7-1mU"/>
+                            <constraint firstAttribute="bottom" secondItem="D1l-TA-MiN" secondAttribute="bottom" id="c7o-qx-Ltu"/>
+                            <constraint firstAttribute="trailing" secondItem="sfK-Fy-Hfw" secondAttribute="trailing" id="cPk-E5-EWf"/>
+                            <constraint firstItem="sfK-Fy-Hfw" firstAttribute="top" secondItem="aJ1-5p-F1e" secondAttribute="top" id="mya-b4-eqD"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="aJ1-5p-F1e" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="5" id="6PY-ux-3Yg"/>
+                    <constraint firstAttribute="trailing" secondItem="aJ1-5p-F1e" secondAttribute="trailing" constant="5" id="R1N-nw-54k"/>
+                    <constraint firstAttribute="bottom" secondItem="aJ1-5p-F1e" secondAttribute="bottom" constant="5" id="yZd-1Y-4WR"/>
+                    <constraint firstItem="aJ1-5p-F1e" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="zTM-cZ-cNE"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="moneda" destination="D1l-TA-MiN" id="gMQ-DD-peX"/>
+                <outlet property="monto" destination="sfK-Fy-Hfw" id="Ryc-sQ-aHX"/>
+                <outlet property="nombreWallet" destination="AaN-PB-Q8i" id="c60-a2-WGw"/>
+                <outlet property="viewBack" destination="aJ1-5p-F1e" id="yhD-4S-ift"/>
+            </connections>
+            <point key="canvasLocation" x="131.8840579710145" y="61.607142857142854"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBrownColor">
+            <color red="0.63529411764705879" green="0.51764705882352946" blue="0.36862745098039218" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

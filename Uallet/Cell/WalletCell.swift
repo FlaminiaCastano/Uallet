@@ -13,6 +13,7 @@ class WalletCell: UITableViewCell {
     @IBOutlet weak var nombreWallet: UILabel!
     @IBOutlet weak var moneda: UILabel!
     @IBOutlet weak var monto: UILabel!
+    @IBOutlet weak var viewBack: UIView!
     
     override func awakeFromNib() {
         super.awakeFromNib()

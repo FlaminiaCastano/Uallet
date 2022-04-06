@@ -17,6 +17,11 @@ class WalletsTableViewController: UITableViewController {
         // Uncomment the following line to preserve selection between presentations
         self.clearsSelectionOnViewWillAppear = false
         
+        setUpView()
+        
+    }
+    
+    func setUpView() {
         self.title = "Wallets"
         
         self.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Agregar", style: .plain, target: self, action: #selector(agregarWallet))
@@ -50,30 +55,48 @@ class WalletsTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return WalletsStorage.shared.wallets.count
     }
+    
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 100
+    }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let wallet = WalletsStorage.shared.wallets[indexPath.row]
+        
+        let detailsVC = WalletDetailViewController()
+        detailsVC.wallet = wallet
+        
+        navigationController?.pushViewController(detailsVC, animated: true)
+    }
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath) as! WalletCell
-        
         let wallet = WalletsStorage.shared.wallets[indexPath.row]
         
+        let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier,
+                                                 for: indexPath) as! WalletCell
+
         cell.nombreWallet.text = wallet.name
-        if wallet.currency == .Pesos{
-            cell.moneda.text = "$"
-        } else if wallet.currency == .Dollar {
-            cell.moneda.text = "USD"
-        } else {
-            cell.moneda.text = "BTC"
+        cell.monto.text = "\(wallet.balance)"
+        cell.moneda.text = wallet.currency.rawValue
+        
+        switch(wallet.currency.rawValue){
+            case "$":
+                cell.viewBack.backgroundColor = UIColor.lightGray
+                cell.viewBack.layer.cornerRadius = 5
+            case "USD":
+            cell.viewBack.backgroundColor = UIColor.systemGreen
+                cell.viewBack.layer.cornerRadius = 5
+            default:
+                cell.viewBack.backgroundColor = UIColor.yellow
+                cell.viewBack.layer.cornerRadius = 5
         }
         
-        
-        cell.monto.text = String(wallet.balance)
-        
         cell.backgroundColor = UIColor(named: "pastel")
+        
 
         return cell
     }
-    
     
 }

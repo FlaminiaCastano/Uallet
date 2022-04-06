@@ -20,8 +20,6 @@ class WalletAddViewController: UIViewController, UITextFieldDelegate {
         self.callback = callback
     }
     
-    var wallet = Wallet(name: "", balance: 0, currency: .Pesos)
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -54,8 +52,11 @@ class WalletAddViewController: UIViewController, UITextFieldDelegate {
     }
         
     @objc func agregar() {
-        wallet.name = txtNombreWallet.text!
-        wallet.balance = Double(txtMontoWallet.text!) ?? 0
+        let balance = Double(txtMontoWallet.text!) ?? 0
+        
+        let currency = Currency.from(index: tipoMoneda.selectedSegmentIndex)
+
+        let wallet = Wallet(name: txtNombreWallet.text!, balance: balance, currency: currency)
         WalletsStorage.shared.add(wallet: wallet)
         
         dismiss(animated: true)
@@ -70,20 +71,6 @@ class WalletAddViewController: UIViewController, UITextFieldDelegate {
     @IBAction func tocoFondo(_ sender: Any) {
         txtNombreWallet.resignFirstResponder()
         txtMontoWallet.resignFirstResponder()
-    }
-    
-    @IBAction func didChangeSegment(_ sender: UISegmentedControl) {
-        if sender.selectedSegmentIndex == 0 {
-            self.wallet.currency = .Pesos
-        } else if sender.selectedSegmentIndex == 1 {
-            self.wallet.currency = .Dollar
-            
-        } else {
-            self.wallet.currency = .Bitcoin
-        }
-        
-        
-        
     }
     
 }

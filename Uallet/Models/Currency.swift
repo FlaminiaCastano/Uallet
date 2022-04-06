@@ -7,8 +7,20 @@
 
 import Foundation
 
-enum Currency {
-   case Pesos
-   case Dollar
-   case Bitcoin
+enum Currency: String, Codable {
+   case Pesos = "$"
+   case Dollar = "USD"
+   case Bitcoin = "BTC"
+    
+   
+    static func from(index: Int) -> Currency {
+        switch index {
+        case 0:
+            return .Pesos
+        case 1:
+            return .Dollar
+        default:
+            return .Bitcoin
+        }
+    }
 }
