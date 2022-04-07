@@ -10,6 +10,8 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeViewController" customModule="Uallet" customModuleProvider="target">
             <connections>
+                <outlet property="DatosView" destination="ZAc-f4-PnQ" id="GTz-iq-d7Z"/>
+                <outlet property="cantidadWallets" destination="48Z-rc-GBg" id="Il9-25-geK"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -17,14 +19,78 @@
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cantidad de Wallets " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="48Z-rc-GBg">
+                    <rect key="frame" x="20" y="98" width="557" height="24"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Datos importantes " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qtw-RR-vlj">
+                    <rect key="frame" x="20" y="222" width="557" height="20.5"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZAc-f4-PnQ">
+                    <rect key="frame" x="20" y="262.5" width="557" height="200"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="RWX-v0-7Tb">
+                            <rect key="frame" x="5" y="5" width="547" height="190"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="✅ Para saber cuanto dinero tenes acumulado, tenes que ir a Dashboards" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="aoP-rK-peO">
+                                    <rect key="frame" x="0.0" y="0.0" width="547" height="63.5"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="✅ Para agregar, editar o eliminar Wallets tenes que ir a Wallets" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oF9-sJ-hog">
+                                    <rect key="frame" x="0.0" y="63.5" width="547" height="63"/>
+                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="✅ Para saber la cotización de Dólares o Bitcoins tenes que ir a Información" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JxL-rT-pDX">
+                                    <rect key="frame" x="0.0" y="126.5" width="547" height="63.5"/>
+                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" name="pastel"/>
+                    <constraints>
+                        <constraint firstItem="RWX-v0-7Tb" firstAttribute="centerY" secondItem="ZAc-f4-PnQ" secondAttribute="centerY" id="4HP-hM-s6J"/>
+                        <constraint firstAttribute="trailing" secondItem="RWX-v0-7Tb" secondAttribute="trailing" constant="5" id="6Kp-q2-JhE"/>
+                        <constraint firstAttribute="bottom" secondItem="RWX-v0-7Tb" secondAttribute="bottom" constant="5" id="HT4-H4-To9"/>
+                        <constraint firstItem="RWX-v0-7Tb" firstAttribute="top" secondItem="ZAc-f4-PnQ" secondAttribute="top" constant="5" id="HbJ-ML-ayn"/>
+                        <constraint firstAttribute="height" constant="200" id="XCX-vk-Yqz"/>
+                        <constraint firstItem="RWX-v0-7Tb" firstAttribute="centerX" secondItem="ZAc-f4-PnQ" secondAttribute="centerX" id="YYJ-fg-yrg"/>
+                        <constraint firstItem="RWX-v0-7Tb" firstAttribute="leading" secondItem="ZAc-f4-PnQ" secondAttribute="leading" constant="5" id="a7p-F1-FVK"/>
+                    </constraints>
+                </view>
+            </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" name="pastel"/>
+            <constraints>
+                <constraint firstItem="ZAc-f4-PnQ" firstAttribute="top" secondItem="Qtw-RR-vlj" secondAttribute="bottom" constant="20" id="1Wb-Kt-sFw"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="48Z-rc-GBg" secondAttribute="trailing" constant="20" id="8GA-vR-8ke"/>
+                <constraint firstItem="48Z-rc-GBg" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="54" id="Fu3-Ph-6DV"/>
+                <constraint firstItem="Qtw-RR-vlj" firstAttribute="top" secondItem="48Z-rc-GBg" secondAttribute="bottom" constant="100" id="JpF-w5-hL0"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Qtw-RR-vlj" secondAttribute="trailing" constant="20" id="Mmj-ch-XA4"/>
+                <constraint firstItem="Qtw-RR-vlj" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="Sue-6f-Tpg"/>
+                <constraint firstItem="48Z-rc-GBg" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="W26-kH-nda"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="ZAc-f4-PnQ" secondAttribute="trailing" constant="20" id="f9m-T9-zAV"/>
+                <constraint firstItem="ZAc-f4-PnQ" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="uFr-1M-ZNK"/>
+            </constraints>
             <point key="canvasLocation" x="132" y="82"/>
         </view>
     </objects>
     <resources>
         <namedColor name="pastel">
-            <color red="0.98799997568130493" green="0.9100000262260437" blue="0.82400000095367432" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.98431372549019602" green="0.90980392156862744" blue="0.82352941176470584" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
     </resources>
 </document>

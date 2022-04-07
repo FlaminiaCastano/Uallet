@@ -31,6 +31,11 @@ class WalletsTableViewController: UITableViewController {
         // Registrar una celda custom
         let nib = UINib(nibName: "WalletCell", bundle: nil)
         tableView.register(nib, forCellReuseIdentifier: cellIdentifier)
+        
+        // Registro un listener para cuando los datos cambien
+        WalletsStorage.shared.addDataChanged {
+            self.tableView.reloadData()
+        }
     }
     
     // MARK: - Eventos de UI
@@ -38,11 +43,6 @@ class WalletsTableViewController: UITableViewController {
     @objc func agregarWallet(){
     
         let walletVC = WalletAddViewController()
-        walletVC.set { grabo in
-            if grabo {
-                self.tableView.reloadData()
-            }
-        }
         present(UINavigationController(rootViewController: walletVC), animated: true)
     }
 

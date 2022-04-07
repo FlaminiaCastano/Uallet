@@ -10,12 +10,10 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="WalletDetailViewController" customModule="Uallet" customModuleProvider="target">
             <connections>
-                <outlet property="nuevoSaldo" destination="LTu-Oh-7kl" id="2dv-Ud-LxL"/>
-                <outlet property="saldo" destination="6Uv-Od-xyM" id="F9t-KV-sBt"/>
+                <outlet property="saldo" destination="6Nw-16-Rjz" id="bXU-HB-uRj"/>
                 <outlet property="tipoMoneda" destination="NdO-KN-AxW" id="kAR-OO-eyi"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
                 <outlet property="vistaBack" destination="Hcr-q9-eV4" id="HCa-WU-V4H"/>
-                <outlet property="vistaEdicion" destination="to4-Pn-P5n" id="5FB-or-jop"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
@@ -29,16 +27,6 @@
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DHU-4o-VmV">
-                    <rect key="frame" x="20" y="740" width="374" height="31"/>
-                    <state key="normal" title="Button"/>
-                    <buttonConfiguration key="configuration" style="filled" title="Editar Saldo">
-                        <color key="baseBackgroundColor" name="Violeta"/>
-                    </buttonConfiguration>
-                    <connections>
-                        <action selector="editarSaldo:" destination="-1" eventType="touchUpInside" id="9z5-47-vGY"/>
-                    </connections>
-                </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XMd-if-d9p">
                     <rect key="frame" x="20" y="791" width="374" height="31"/>
                     <state key="normal" title="Button"/>
@@ -50,64 +38,32 @@
                     </connections>
                 </button>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hcr-q9-eV4">
-                    <rect key="frame" x="20" y="108" width="374" height="100"/>
+                    <rect key="frame" x="20" y="108" width="374" height="50"/>
                     <subviews>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Moneda" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NdO-KN-AxW">
-                            <rect key="frame" x="80" y="32" width="114" height="36"/>
-                            <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
-                            <nil key="textColor"/>
-                            <nil key="highlightedColor"/>
-                        </label>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Saldo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Uv-Od-xyM">
-                            <rect key="frame" x="214" y="32" width="80" height="36"/>
-                            <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
-                            <nil key="textColor"/>
-                            <nil key="highlightedColor"/>
-                        </label>
-                    </subviews>
-                    <color key="backgroundColor" name="pastel"/>
-                    <constraints>
-                        <constraint firstItem="NdO-KN-AxW" firstAttribute="centerY" secondItem="Hcr-q9-eV4" secondAttribute="centerY" id="0lQ-mO-6IG"/>
-                        <constraint firstItem="NdO-KN-AxW" firstAttribute="leading" secondItem="Hcr-q9-eV4" secondAttribute="leading" constant="80" id="3aS-ay-qbs"/>
-                        <constraint firstAttribute="trailing" secondItem="6Uv-Od-xyM" secondAttribute="trailing" constant="80" id="5lz-4N-JMx"/>
-                        <constraint firstItem="6Uv-Od-xyM" firstAttribute="centerY" secondItem="Hcr-q9-eV4" secondAttribute="centerY" id="JLO-h8-OZg"/>
-                        <constraint firstAttribute="height" constant="100" id="ons-uZ-wXA"/>
-                    </constraints>
-                </view>
-                <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="to4-Pn-P5n">
-                    <rect key="frame" x="20" y="600" width="374" height="100"/>
-                    <subviews>
-                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="il6-6P-zVj">
-                            <rect key="frame" x="10" y="10" width="354" height="80"/>
+                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="hEI-0d-GY5">
+                            <rect key="frame" x="10" y="10" width="354" height="30"/>
                             <subviews>
-                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Nuevo Salgo" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LTu-Oh-7kl">
-                                    <rect key="frame" x="0.0" y="0.0" width="354" height="30"/>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Moneda" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NdO-KN-AxW">
+                                    <rect key="frame" x="0.0" y="0.0" width="177" height="30"/>
+                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Saldo" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6Nw-16-Rjz">
+                                    <rect key="frame" x="177" y="0.0" width="177" height="30"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                     <textInputTraits key="textInputTraits"/>
                                 </textField>
-                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t3x-gL-hPg">
-                                    <rect key="frame" x="0.0" y="50" width="354" height="30"/>
-                                    <constraints>
-                                        <constraint firstAttribute="height" constant="30" id="Fni-ST-CND"/>
-                                    </constraints>
-                                    <state key="normal" title="Button"/>
-                                    <buttonConfiguration key="configuration" style="filled" title="Button">
-                                        <color key="baseBackgroundColor" name="Violeta"/>
-                                    </buttonConfiguration>
-                                    <connections>
-                                        <action selector="editarFinal:" destination="-1" eventType="touchUpInside" id="eyq-VZ-uPZ"/>
-                                    </connections>
-                                </button>
                             </subviews>
                         </stackView>
                     </subviews>
                     <color key="backgroundColor" name="pastel"/>
                     <constraints>
-                        <constraint firstItem="il6-6P-zVj" firstAttribute="top" secondItem="to4-Pn-P5n" secondAttribute="top" constant="10" id="7cJ-1K-TnN"/>
-                        <constraint firstAttribute="height" constant="100" id="Oe8-1s-u7m"/>
-                        <constraint firstAttribute="bottom" secondItem="il6-6P-zVj" secondAttribute="bottom" constant="10" id="cTb-IP-MS7"/>
-                        <constraint firstAttribute="trailing" secondItem="il6-6P-zVj" secondAttribute="trailing" constant="10" id="vae-sy-2qx"/>
-                        <constraint firstItem="il6-6P-zVj" firstAttribute="leading" secondItem="to4-Pn-P5n" secondAttribute="leading" constant="10" id="yuS-07-no0"/>
+                        <constraint firstItem="hEI-0d-GY5" firstAttribute="leading" secondItem="Hcr-q9-eV4" secondAttribute="leading" constant="10" id="1qI-x4-7lj"/>
+                        <constraint firstAttribute="bottom" secondItem="hEI-0d-GY5" secondAttribute="bottom" constant="10" id="1s4-GS-B70"/>
+                        <constraint firstAttribute="trailing" secondItem="hEI-0d-GY5" secondAttribute="trailing" constant="10" id="aFQ-lm-Q5S"/>
+                        <constraint firstItem="hEI-0d-GY5" firstAttribute="top" secondItem="Hcr-q9-eV4" secondAttribute="top" constant="10" id="exH-l7-7aL"/>
+                        <constraint firstAttribute="height" constant="50" id="ons-uZ-wXA"/>
                     </constraints>
                 </view>
             </subviews>
@@ -116,17 +72,11 @@
             <constraints>
                 <constraint firstItem="sNj-OK-AWW" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="4IQ-f1-Y37"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Hcr-q9-eV4" secondAttribute="trailing" constant="20" id="7NX-Od-Ay9"/>
-                <constraint firstItem="XMd-if-d9p" firstAttribute="top" secondItem="DHU-4o-VmV" secondAttribute="bottom" constant="20" id="7lH-nH-5uN"/>
                 <constraint firstItem="sNj-OK-AWW" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="9Ih-Il-AvZ"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="XMd-if-d9p" secondAttribute="trailing" constant="20" id="9c4-Rg-1dD"/>
                 <constraint firstItem="Hcr-q9-eV4" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="BbV-im-H8M"/>
-                <constraint firstItem="DHU-4o-VmV" firstAttribute="leading" secondItem="XMd-if-d9p" secondAttribute="leading" id="C1r-gJ-uAS"/>
-                <constraint firstItem="to4-Pn-P5n" firstAttribute="trailing" secondItem="Hcr-q9-eV4" secondAttribute="trailing" id="MKw-Ri-4gc"/>
                 <constraint firstItem="Hcr-q9-eV4" firstAttribute="top" secondItem="sNj-OK-AWW" secondAttribute="bottom" constant="10" id="QpK-cz-mXM"/>
-                <constraint firstItem="to4-Pn-P5n" firstAttribute="leading" secondItem="Hcr-q9-eV4" secondAttribute="leading" id="aoL-xl-QJe"/>
                 <constraint firstItem="sNj-OK-AWW" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="30" id="iB2-dT-3VB"/>
-                <constraint firstItem="DHU-4o-VmV" firstAttribute="trailing" secondItem="XMd-if-d9p" secondAttribute="trailing" id="mD2-ph-9sE"/>
-                <constraint firstItem="DHU-4o-VmV" firstAttribute="top" secondItem="to4-Pn-P5n" secondAttribute="bottom" constant="40" id="mxE-AO-zAW"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="XMd-if-d9p" secondAttribute="bottom" constant="40" id="p9f-0q-FTj"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="sNj-OK-AWW" secondAttribute="trailing" constant="20" id="rs4-ek-4yU"/>
                 <constraint firstItem="XMd-if-d9p" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="uTG-7S-H4c"/>

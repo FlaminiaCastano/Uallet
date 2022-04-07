@@ -9,10 +9,8 @@ import UIKit
 
 class WalletDetailViewController: UIViewController {
     @IBOutlet weak var tipoMoneda: UILabel!
-    @IBOutlet weak var saldo: UILabel!
     @IBOutlet weak var vistaBack: UIView!
-    @IBOutlet weak var vistaEdicion: UIView!
-    @IBOutlet weak var nuevoSaldo: UITextField!
+    @IBOutlet weak var saldo: UITextField!
     
     var wallet: Wallet?
     
@@ -25,29 +23,25 @@ class WalletDetailViewController: UIViewController {
     func setUpView(){
         self.title = wallet?.name
         tipoMoneda.text = wallet?.currency.rawValue
-        saldo.text = "\(wallet!.balance)"
+        let balance = wallet?.balance ?? 0
+        saldo.text = "\(balance)"
         vistaBack.layer.borderColor = UIColor(named: "Violeta")?.cgColor
         vistaBack.layer.borderWidth = 2
         vistaBack.layer.cornerRadius = 15
-        vistaEdicion.layer.borderColor = UIColor(named: "Violeta")?.cgColor
-        vistaEdicion.layer.borderWidth = 2
-        vistaEdicion.layer.cornerRadius = 15
-        
-    }
-
-    @IBAction func editarSaldo(_ sender: Any) {
-        vistaEdicion.isHidden = false
-    }
-    
-    @IBAction func editarFinal(_ sender: Any) {
-        wallet?.balance = Double(nuevoSaldo.text!) ?? 0
-        vistaEdicion.isHidden = true
-        saldo.text = "\(wallet!.balance)"
-        
-        //RELOAD DATA??
     }
     
     @IBAction func eliminarWallet(_ sender: Any) {
+        let alert = UIAlertController(title: "Eliminar Wallet", message: "¿Estás seguro/a que querés eliminar la wallet? No se puede recuperar", preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "Eliminar", style: .destructive, handler: { _ in
+            WalletsStorage.shared.delete(wallet: self.wallet!)
+            self.navigationController?.popViewController(animated: true)
+        }))
+        alert.addAction(UIAlertAction(title: "Cancelar", style: .cancel))
+        present(alert, animated: true)
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        WalletsStorage.shared.editBalance(wallet: self.wallet!, balance: Double(saldo.text!) ?? 0)
     }
     
 }
