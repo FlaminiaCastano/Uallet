@@ -48,9 +48,6 @@
                                 <segment title="Dólares"/>
                                 <segment title="Bitcon"/>
                             </segments>
-                            <connections>
-                                <action selector="didChangeSegment:" destination="-1" eventType="valueChanged" id="fx5-dp-FrV"/>
-                            </connections>
                         </segmentedControl>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Monto" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WyA-zD-RIs">
                             <rect key="frame" x="0.0" y="126" width="374" height="20.5"/>
